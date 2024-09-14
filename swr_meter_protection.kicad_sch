@@ -2466,6 +2466,12 @@
 		(uuid "c5a607f4-13d9-44de-8894-d3a876b77a01")
 	)
 	(junction
+		(at 50.8 162.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ceac7b7d-8e72-4983-9c8a-759cf35c2593")
+	)
+	(junction
 		(at 83.82 170.18)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2533,7 +2539,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 162.56) (xy 55.88 162.56)
+			(xy 48.26 162.56) (xy 50.8 162.56)
 		)
 		(stroke
 			(width 0)
@@ -2790,6 +2796,16 @@
 			(type default)
 		)
 		(uuid "2f4f371d-d7bc-4c3b-b9fe-ad9446f20c7c")
+	)
+	(wire
+		(pts
+			(xy 50.8 162.56) (xy 55.88 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "318298d6-14a7-499f-8831-d1573e2d5303")
 	)
 	(wire
 		(pts
@@ -6116,6 +6132,72 @@
 			(project "TXRX_relay_board"
 				(path "/3fd5c942-61b2-4223-9b31-b02f3aad05f5"
 					(reference "R?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 50.8 162.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "69ef508b-fe05-4cc5-8b3e-edb99bc0fc85")
+		(property "Reference" "#FLG01"
+			(at 50.8 160.655 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 50.8 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 50.8 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 50.8 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d68b6c13-18ce-4a6d-97f8-e0afeaf4dcbd")
+		)
+		(instances
+			(project "Forte_PA_Deck"
+				(path "/16ef054e-9f4a-41c5-82db-c174725d77e8/9c2873c8-c2c1-423e-860d-7050a6275c09"
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
